@@ -25,11 +25,12 @@ const Ideas = () => {
 
     const skeletonArray = Array.from({ length: 6 })
 
+
     return (
         <Container>
             <section className='py-16'>
                 <h2 className='text-center text-2xl font-bold mb-12'>
-                    {t('find')}
+                    {t('messages.find')}
                 </h2>
 
                 {isLoading ? (
