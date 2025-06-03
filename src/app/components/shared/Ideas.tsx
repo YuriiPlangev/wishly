@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import Idea from './Idea'
 import Container from './Container'
 import useGiftIdeasStore from '@/app/store/useGiftIdeasStore'
@@ -9,8 +8,6 @@ import Autoplay from "embla-carousel-autoplay"
 import IdeaSkeleton from '../skeleton/IdeaSkeleton'
 
 const Ideas = () => {
-
-    const { t } = useTranslation()
 
     const { ideas, fetchGiftIdeas } = useGiftIdeasStore()
     const [isLoading, setIsLoading] = useState<boolean>(true)
@@ -29,7 +26,7 @@ const Ideas = () => {
         <Container>
             <section className='py-16'>
                 <h2 className='text-center text-2xl font-bold mb-12'>
-                    {t('find')}
+                    Find you perfect gift
                 </h2>
 
                 {isLoading ? (

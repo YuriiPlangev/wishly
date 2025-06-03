@@ -12,6 +12,7 @@ interface Props {
 }
 
 const Idea = ( {idea}: Props ) => {
+
   return (
     <article>
         <Link href={`/GiftIdea/${idea.id}`}>
